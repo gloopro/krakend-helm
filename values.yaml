@@ -76,7 +76,10 @@ autoscaling:
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
 
-nodeSelector: {}
+nodeSelector: {
+  eks.amazonaws.com/nodegroup: paypecker-am-private-node-group
+}
+
 
 tolerations: []
 
